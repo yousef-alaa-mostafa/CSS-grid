@@ -1,0 +1,35 @@
+.container {
+  display: grid;
+  grid-auto-rows: minmax(200px, auto);
+  grid-template-areas:
+    "head head head head head"
+    "sl sl nav nav nav"
+    "sl sl cont cont cont"
+    "sl sl cont cont cont"
+    "sl sl cont cont cont"
+    "foot foot foot foot foot";
+  gap: 10px;
+}
+
+.box {
+  background-color: #aaa;
+  color: #fff;
+  text-align: center;
+}
+
+.head {
+  /* use grid-area to give name to the area */
+  grid-area: head;
+}
+.nav {
+  grid-area: nav;
+}
+.sideleft {
+  grid-area: sl;
+}
+.content {
+  grid-area: cont;
+}
+.footer {
+  grid-area: foot;
+}
